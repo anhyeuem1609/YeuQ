@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Gửi em — Bảo Nam ❤️</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+body{
+  min-height:100vh;overflow-x:hidden;
+  display:flex;align-items:center;justify-content:center;
+  background:radial-gradient(circle at top,#ffedf4 0,#f5c8d9 42%,#b985b9 100%);
+  color:#4b2335;padding:22px;
+}
+body:before{
+  content:"";position:fixed;inset:0;pointer-events:none;opacity:.28;
+  background-image:radial-gradient(#fff 1px,transparent 1px);
+  background-size:24px 24px;
+}
+.card{
+  width:min(100%,470px);position:relative;z-index:2;
+  padding:30px 25px;border-radius:30px;
+  background:rgba(255,255,255,.76);
+  border:1px solid rgba(255,255,255,.85);
+  box-shadow:0 25px 70px rgba(91,32,65,.25);
+  backdrop-filter:blur(16px);
+  text-align:center;animation:up .8s ease;
+}
+.icon{font-size:62px;animation:pulse 1.4s infinite;display:block}
+h1{margin:9px 0 7px;font-size:28px}
+.small{color:#875268;line-height:1.6}
+input{
+  width:100%;margin:22px 0 12px;padding:15px 18px;
+  border:1px solid #ecc5d5;border-radius:15px;outline:none;
+  text-align:center;font-size:18px;letter-spacing:7px;
+  background:#fff9fb;color:#54243a;
+}
+input:focus{box-shadow:0 0 0 4px rgba(220,100,150,.12)}
+button{
+  border:0;border-radius:999px;padding:14px 25px;
+  background:linear-gradient(100deg,#e35d8b,#a65bd8);
+  color:white;font-size:16px;font-weight:700;cursor:pointer;
+  box-shadow:0 9px 22px rgba(179,72,125,.25);
+  transition:.2s;
+}
+button:hover{transform:translateY(-2px)}
+button:active{transform:scale(.97)}
+.error{height:22px;color:#c3446d;font-size:14px}
+.page{display:none}
+.message{
+  margin-top:20px;padding:21px 19px;border-radius:21px;
+  background:rgba(255,247,250,.9);text-align:left;
+  line-height:1.85;font-size:16px;
+  border:1px solid rgba(224,150,180,.28);
+}
+.message b{color:#b43f6b}
+.divider{margin:20px auto;width:65px;height:2px;background:#e6a2bd;border-radius:5px}
+.signature{margin-top:24px;font-family:cursive;font-size:25px;color:#9b4265}
+.back{margin-top:20px;background:transparent;color:#9b4265;box-shadow:none;font-weight:600}
+.floating{
+ position:fixed;bottom:-40px;z-index:1;pointer-events:none;
+ animation:float 7s linear forwards;opacity:.75
+}
+@keyframes up{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:none}}
+@keyframes pulse{50%{transform:scale(1.1)}}
+@keyframes float{
+  0%{transform:translateY(0) rotate(0);opacity:0}
+  15%{opacity:.8}100%{transform:translateY(-110vh) rotate(360deg);opacity:0}
+}
+@media(max-width:430px){.card{padding:27px 19px}h1{font-size:25px}.message{font-size:15.5px}}
+</style>
+</head>
+<body>
+
+<div class="card">
+
+  <!-- TRANG MẬT KHẨU -->
+  <section id="login" class="page" style="display:block">
+    <span class="icon">🔐❤️</span>
+    <h1>Một điều anh muốn nói với em</h1>
+    <p class="small">Có một bức thư anh đã giữ trong lòng rất lâu.<br>Chỉ em mới mở được nó.</p>
+    <input id="password" type="password" inputmode="numeric" maxlength="4" placeholder="••••" aria-label="Mật khẩu">
+    <div class="error" id="error"></div>
+    <button onclick="unlock()">Mở bức thư 💌</button>
+  </section>
+
+  <!-- TRANG 1 -->
+  <section id="page1" class="page">
+    <span class="icon">💗</span>
+    <h1>Anh muốn nói thật lòng...</h1>
+    <div class="divider"></div>
+    <div class="message">
+      Anh muốn được <b>đụng chạm, được ôm em thật lâu</b>, vì trong lòng anh
+      đôi khi sợ đó sẽ là lần cuối anh còn có cơ hội ở gần em.<br><br>
+
+      Anh muốn <b>hôn em thật nhiều</b>, không phải vì anh tham lam,
+      mà vì anh sợ một ngày em rời đi, những điều nhỏ bé ấy cũng chỉ còn
+      là ký ức anh nhớ mãi.<br><br>
+
+      Đôi lúc anh có thể <b>kiểm soát em</b>, vì anh sợ có một ngày sẽ có ai đó
+      cướp em khỏi anh. Không phải vì anh không tin em...
+      <b>mà vì anh thật sự rất sợ mất người anh thương.</b><br><br>
+
+      Nếu có lúc anh làm em mệt, anh xin lỗi. Anh đang học cách yêu em
+      bằng sự tin tưởng thay vì nỗi sợ. Anh chỉ mong em hiểu rằng phía sau
+      những lúc anh vụng về ấy là một trái tim <b>rất thương em</b>.<br><br>
+
+      Em không cần phải hoàn hảo. Chỉ cần là em thôi cũng đủ khiến anh
+      muốn ở lại, muốn quan tâm, muốn nghe em kể những chuyện nhỏ nhặt
+      nhất trong ngày. ❤️
+    </div>
+    <button onclick="nextPage()">Qua trang →</button>
+  </section>
+
+  <!-- TRANG 2 -->
+  <section id="page2" class="page">
+    <span class="icon">🌹</span>
+    <h1>Điều anh mong nhất</h1>
+    <div class="divider"></div>
+    <div class="message">
+      <b>Anh yêu em.</b><br><br>
+
+      Dù chúng ta đã dừng lại, anh vẫn mong một ngày nào đó em sẽ quay lại
+      với anh. Nếu ngày ấy thật sự đến, anh muốn chúng ta <b>làm lại từ đầu</b>,
+      chậm hơn, trưởng thành hơn và yêu nhau tử tế hơn.<br><br>
+
+      Anh hứa sẽ yêu em nhiều, sẽ cố gắng lắng nghe em hơn,
+      tôn trọng những điều em muốn và không để những nỗi sợ của anh
+      biến thành áp lực dành cho em.<br><br>
+
+      Nếu em không muốn, anh sẽ tôn trọng và anh sẽ đi.
+      Nhưng em hãy nhớ rằng <b>em là người anh yêu thương nhất</b>.<br><br>
+
+      Nếu một ngày em bị ai làm tổn thương, bị bắt nạt, gặp chuyện buồn
+      hay đơn giản chỉ là cảm thấy cô đơn, <b>hãy nói với anh</b>.
+      Anh sẽ cố gắng ở bên và bảo vệ em theo cách anh có thể,
+      nhưng anh cũng mong em luôn biết tự bảo vệ mình và tìm đến những
+      người đáng tin cậy khi cần.<br><br>
+
+      Anh không biết tương lai sẽ đưa chúng ta về đâu.
+      Anh chỉ biết nếu có một cơ hội, anh vẫn muốn nắm tay em,
+      cùng em đi qua những ngày bình thường nhất —
+      vì đôi khi <b>hạnh phúc không cần điều gì lớn lao, chỉ cần người mình thương
+      vẫn còn ở bên cạnh.</b><br><br>
+
+      Dù sau này em chọn con đường nào, anh vẫn mong em được bình an,
+      được yêu thương và luôn mỉm cười. 💗
+    </div>
+    <div class="signature">Bảo Nam ❤️</div>
+    <button class="back" onclick="restart()">↩ Đọc lại từ đầu</button>
+  </section>
+
+</div>
+
+<script>
+const login=document.getElementById("login");
+const page1=document.getElementById("page1");
+const page2=document.getElementById("page2");
+const input=document.getElementById("password");
+const error=document.getElementById("error");
+
+function unlock(){
+  if(input.value==="1609"){
+    login.style.display="none";
+    page1.style.display="block";
+  }else{
+    error.textContent="Mật khẩu chưa đúng, thử lại nhé ❤️";
+    input.value="";
+    input.focus();
+  }
+}
+input.addEventListener("keydown",e=>{if(e.key==="Enter")unlock()});
+
+function nextPage(){
+  page1.style.display="none";
+  page2.style.display="block";
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+function restart(){
+  page2.style.display="none";
+  page1.style.display="none";
+  login.style.display="block";
+  input.value="";
+  error.textContent="";
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+
+function heart(){
+  const h=document.createElement("div");
+  h.className="floating";
+  h.textContent=["❤️","💗","💕","💖","🌸"][Math.floor(Math.random()*5)];
+  h.style.left=Math.random()*100+"vw";
+  h.style.fontSize=(14+Math.random()*18)+"px";
+  h.style.animationDuration=(5+Math.random()*4)+"s";
+  document.body.appendChild(h);
+  setTimeout(()=>h.remove(),10000);
+}
+setInterval(heart,650);
+</script>
+</body>
+</html>
